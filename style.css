@@ -1,0 +1,136 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*{
+    padding:0;
+    margin:0;
+    font-size: 1.6rem;
+}
+body{
+    background-image: 
+    url("/resource/images/bg-intro-desktop.png");
+    background-color:rgb(233, 111, 111);
+}
+.main{
+    max-width:960px;
+    display:flex;
+    /* margin-top: 500px;
+    margin-left: 600px;
+    margin-right: 400px; */
+    align-items: center;
+    margin:0 auto;
+    margin-top: 400px;
+   
+}
+
+.main-right, .input-field{
+   
+    display:flex;
+    flex-direction: column;
+}
+.input-field{
+    border:2px solid purple;
+    padding:20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.content-text{
+    width:500px;
+    color:white;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+    width:400px;
+    color:white;
+}
+.try-it{
+    margin-bottom: 15px;
+    border:2px solid blue;
+    background-color:rgb(76, 76, 143);
+    color:white;
+    border-radius: 7px;
+    padding:15px;
+    text-align: center;
+    font-weight: bold;
+}
+.light-font{
+    font-weight: 100;
+}
+input{
+    padding:15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+a{
+    margin-top: 10px;
+    border:1px solid green;
+    background-color: green;
+    opacity:0.62; /*just experimenting*/
+    color:white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    border-radius: 7px;
+}
+.highlight-red{
+    color:red;
+}
+.terms-text{
+    color:grey;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+@media(max-width:994px){
+    
+    .main{
+        display:flex;
+        flex-direction: column;
+        margin-top: 100px;
+        
+    }
+    .content-text{
+        margin-bottom: 15px;
+        width:400px;
+        padding:25px;
+    }
+    h1{
+        font-size: 30px;
+        padding-left: 20px;;
+    }
+}
+@media(max-width:515px){
+   
+    .main{
+        margin-top: 0;
+        
+    }
+    .content-text{
+        margin-bottom: 15px;
+        width:200px;
+        border:1px solid black;
+        padding:25px;
+    }
+    h1{
+        font-size: 30px;
+        border:1px solid black;
+        width:200px;
+        margin-left: 10px;
+        padding:15px;
+        
+    }
+    .try-it{
+        width:250px;
+        padding:0;
+        margin:0 auto;
+        padding:15px;
+        margin-bottom: 15px;
+    }
+    .input-field{
+        width:250px;
+    }
+}
